@@ -76,8 +76,10 @@ class Helper {
 			dir: false
 		};
 
+		const templatePath = this.getSrc(this.config.template);
+
 		try {
-			fileStat = fs.statSync(this.config.template);
+			fileStat = fs.statSync(templatePath);
 
 			isTemp.file = fileStat.isFile();
 			isTemp.dir = fileStat.isDirectory();
@@ -88,7 +90,7 @@ class Helper {
 
 		if (isTemp.file && !isTemp.dir) {
 			// If template exist render with ejs.
-			const rawContent = fs.readFileSync(this.getSrc(this.config.template), 'utf-8');
+			const rawContent = fs.readFileSync(templatePath, 'utf-8');
 
 			try {
 				content = ejs.render(rawContent, config);

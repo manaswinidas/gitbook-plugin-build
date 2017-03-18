@@ -72,14 +72,14 @@
 	},
 	"scripts": {
 		"gulp": "gulp",
-		"test": "npm run gulp test:spec && npm run gulp coverage && npm run gulp test:e2e && npm run gulp lint && npm run gulp test:docs && npm run gulp jsdoc && npm run gulp test:dep",
+		"test": "npm run gulp test:spec && npm run gulp coverage && npm run gulp test:e2e && npm run gulp lint && npm run gulp test:docs && npm run gulp jsdoc",
 		"prepublish": "npm run gulp prepublish"
 	},
 	"dependencies": {
 		"ejs": "^2.5.2",
 		"mkdirp": "^0.5.1",
 		"pdc": "^0.2.3",
-		"yargs": "^6.4.0"
+		"yargs": "^7.0.2"
 	},
 	"devDependencies": {
 		"assert": "^1.4.1",
@@ -88,7 +88,6 @@
 		"eslint-config-airbnb-base": "^10.0.1",
 		"eslint-plugin-import": "^2.1.0",
 		"gulp": "^3.9.0",
-		"gulp-check-deps": "^1.4.1",
 		"gulp-codacy": "^1.0.0",
 		"gulp-eslint": "^3.0.1",
 		"gulp-exclude-gitignore": "^1.0.0",

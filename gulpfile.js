@@ -13,7 +13,6 @@ const mocha = require('gulp-mocha');
 const istanbul = require('gulp-istanbul');
 const nsp = require('gulp-nsp');
 const plumber = require('gulp-plumber');
-const checkDeps = require('gulp-check-deps');
 const eslint = require('gulp-eslint');
 const shell = require('gulp-shell');
 const ghPages = require('gulp-gh-pages');
@@ -22,7 +21,6 @@ const codacy = require('gulp-codacy');
 
 const mkdocsConfig = './config/mkdocs.yml';
 const jsdocConfig = './config/jsdoc.json';
-const checkDepConfig = './config/checkDep.json';
 const codacyConfig = './config/codacy.json';
 const changelogConfig = './config/changelog.json';
 
@@ -115,12 +113,6 @@ gulp.task('jsdoc', false, (cb) => {
 		'docs/documentation.md'
 	], {read: false})
 		.pipe(jsdoc(config, cb));
-});
-
-gulp.task('test:dep', 'Test project dependencies for deprecation.', () => {
-	const config = require(checkDepConfig);
-	return gulp.src('package.json')
-		.pipe(checkDeps(config));
 });
 
 gulp.task('prepublish', false, ['nsp'], () => {

@@ -1,6 +1,6 @@
 # Get started
 
-## Instalation & Setup
+## Installation & Setup
 
 * Follow [this steps](http://pandoc.org/installing.html) to install pandoc.
 * Add pandoc binaries to your path which is highly recommended.
@@ -13,7 +13,7 @@
 * Add **GPB** configuration to `(book.json).pluginsConfig.build` object, or leave it empty to use default configuration.
 * Default configuration is located [here at the bottom](https://plugins.gitbook.com/plugin/build).
 * Install gitbook plugins by running `gitbook install`.
-* To se which formats pandoc provides check `man pandoc`.
+* To see which formats pandoc provides check `man pandoc`.
 
 ## Usage
 
@@ -21,7 +21,7 @@ Add `--plugin-build` flag to you gitbook command to start **GPB** build.
 **GPB** will create output file base on [gitbook summary file](https://toolchain.gitbook.com/pages.html)...
 
 ```shell
-gitbook serve --plugin-build=latex // Ovveride config.format
+gitbook serve --plugin-build=latex // Override config.format
 gitbook build --plugin-build       // Use default config.format
 ```
 

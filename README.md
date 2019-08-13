@@ -40,7 +40,7 @@
 
 **GPB** (gitbook-plugin-build) extends [gitbook](https://www.gitbook.com/)
 build system with [pandoc](http://pandoc.org/) converter. Pandoc is your
-swiss-army knife when it comes to coverting files. **GPB** use pandoc
+swiss-army knife when it comes to converting files. **GPB** use pandoc
 build system to convert and compile your book in variety of formats:
 
 * **TeX formats**: LaTeX, ConTeXt, LaTeX Beamer slides
@@ -53,7 +53,7 @@ build system to convert and compile your book in variety of formats:
 * **PDF via LaTeX**
 * **Lightweight markup formats**: Markdown (including CommonMark), reStructuredText, AsciiDoc, MediaWiki markup, DokuWiki markup, Emacs Org-Mode, Textile
 
-Writing books with this plugin will be peace of cake. And here cake is **not a lie**!
+Writing books with this plugin will be piece of cake. And here cake is **not a lie**!
 
 <br>
 
